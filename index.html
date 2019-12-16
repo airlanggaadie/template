@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>QNESYS</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="super.css">
+</head>
+
+<body>
+    <header>
+        <!-- navbar -->
+        <nav style="position: relative;">
+            <!-- pembungkus kanan -->
+            <div>
+                <!-- toggle -->
+                <div style="z-index: 2;">
+                    <!-- tombol toggle -->
+                    <div class="togel">
+                        <button><span></span></button>
+                    </div>
+                </div>
+                <!-- isi navbar kanan -->
+                <div class="rb">
+                    <!-- navbutton -->
+                    <div class="text-left" style="margin-top: 30%; margin-bottom: auto;">
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Contacts</a></li>
+                        </ul>
+                        <!-- footer -->
+                        <ul>
+                            <li>
+                                <p>Phone:</p>
+                                <p>+62 xxxxxxxx</p>
+                            </li>
+                            <li>
+                                <p>Email</p>
+                                <p>info@gnesys.com</p>
+                            </li>
+                            <li>
+                                Follow Us:
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- pembungkus kiri -->
+            <div style="display: none;">
+                <!-- isi navbar kiri -->
+                <div>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- INTRO -->
+        <section class="head-bg">
+            <div class="container">
+                <img src="img/Logo Qnesys - 20190514 xx.png" alt="logo" width="700" height="700"
+                    style="max-width: 100%; height: auto; ">
+                <br><br>
+                <div class="mt-5 text-center">
+                    <h5 class="mx-auto"
+                        style="background: white; letter-spacing: .6rem; text-transform: uppercase; max-width: 55%;">
+                        Smart
+                        Hospitality Technology</h5>
+                </div>
+                <br><br>
+                <div>
+                    <a class="but active">More About</a>
+                </div>
+            </div>
+        </section>
+    </header>
+    <div class="container">
+        <div class="row" style="height: 100vh;">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-12">
+
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-12">
+                PT. QNESYS TEKNOLOGI INDONESIA (merupakan Perusahaan Afiliasi dari PT. Adhiwira) yang bergerak di sektor
+                Hotel Hospitality Techonology. dan sudah bekerjasama dengan bebrapa group hotel berbintang, untuk
+                men-support sistem perhotelan.
+
+                Kami adalah Hotel Hospitality System pertama di Indonesia, yang menggabungkan antara hardware dan
+                software.
+            </div>
+        </div>
+
+    </div>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script> -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <script>
+        var a = 0;
+        function togel() {
+            if (a == 0) {
+                $(".togel").addClass("active");
+                $(".rb").addClass("rb-active")
+                a = 1;
+            } else {
+                $(".togel").removeClass("active");
+                $(".rb").removeClass("rb-active")
+                a = 0;
+            }
+        }
+        $(document).ready(function () {
+            $(".togel").click(function () {
+                togel()
+            });
+        });
+    </script>
+
+</body>
+
+</html>

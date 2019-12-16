@@ -1,0 +1,137 @@
+.togel{
+    border-radius: 50%;
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    z-index: 9;
+}
+.togel button{
+    border-radius: 50%; 
+    height: 60px; 
+    width: 60px; 
+    border: none;
+    background-color: #00a8ff;
+}
+.togel button span{
+    content: "";
+    position: absolute;
+    left: 8px;
+    top: 30px;
+    width: 42px;
+    background: #111;
+    height: 1px;
+    display: block;
+    transition: all .25s ease;
+}
+.togel button span::after{
+    content: "";
+    /* z-index: 2; */
+    position: absolute;
+    left: 0px;
+    top: 12px;
+    width: 42px;
+    background: #111;
+    height: 1px;
+    transition: all .25s ease;
+}
+.togel button span::before{
+    content: "";
+    /* z-index: 2; */
+    position: absolute;
+    left: 0px;
+    top: -12px;
+    width: 42px;
+    background: #111;
+    height: 1px;
+    transition: all .25s ease;
+}
+.active button span{
+    background-color: transparent;
+}
+.active button span::after{
+    transform: rotate(-45deg);
+    top: 0;
+    transition: all .25s ease;
+}
+.active button span::before{
+    transform: rotate(45deg);
+    top: 0;
+    transition: all .25s ease;
+}
+
+.head-bg {
+    background-image: url(img/2istockphoto-919955346-1024x1024.jpg);
+    background-size: cover;
+    max-height: 100vh;
+    background-position: center;
+    padding: 10% 0;
+    text-align: center;
+}
+
+.head-bg .active {
+    position: relative;
+    border: none;
+    background-color: transparent;
+    color: white;
+    z-index: 1;
+    transition: all .2s ease-in-out; 
+}
+.head-bg .but:hover{
+    background-color: #00a8ff;
+    padding: 0 10px;
+    cursor: pointer;
+}
+.head-bg .active::before {
+    /* background-color: #00a8ff; */
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* padding: 0 2px; */
+    border-top: 1px solid #00a8ff;
+    transition: all .25s ease;
+    -webkit-transform: translateY(100%) translateY(-1px);
+    transform: translateY(100%) translateY(-1px);
+    z-index: -1;
+}
+.rb ul{
+    list-style: none;
+}
+.rb li{
+    margin: 10px;
+}
+.rb li a{
+    background-color: transparent; 
+    padding: 0 10px; 
+    border: none; 
+    color: white; 
+    letter-spacing: .2em; 
+    font-size: 20px; 
+    text-decoration: none;
+}
+.rb li a:hover{
+    background-color: #00a8ff;
+    transition: all .25s ease;
+}
+.rb{
+    position: fixed;
+    width: 0;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    overflow: hidden;
+    transition: all .25s ease;
+}
+.rb-active{
+    z-index: 1;
+    position: fixed;
+    height: 100vh;
+    width: 30%;
+    top: 0;
+    right: 0;
+    background-color: #231f20;
+    overflow: hidden;
+    transition: all .25s ease;
+}
